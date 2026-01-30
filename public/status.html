@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crawl Status</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .log-container {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            height: 300px;
+            overflow-y: auto;
+            font-family: monospace;
+            margin-bottom: 20px;
+            white-space: pre-wrap;
+        }
+
+        .log-entry {
+            margin-bottom: 5px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 2px;
+        }
+
+        .log-time {
+            color: #888;
+            font-size: 0.8em;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Crawl Status</h1>
+        <div id="statusIndicator">Initializing...</div>
+
+        <h2>Live Logs</h2>
+        <div id="logs" class="log-container">Waiting for logs...</div>
+
+        <div id="resultsSection" class="hidden">
+            <h2>Crawl Results</h2>
+            <div id="resourcesList"></div>
+            <button onclick="window.location.href='/'">Back to Home</button>
+        </div>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const crawlId = urlParams.get('id');
+        const logsDiv = document.getElementById('logs');
+        const statusIndicator = document.getElementById('statusIndicator');
+        const resultsSection = document.getElementById('resultsSection');
+        const resourcesList = document.getElementById('resourcesList');
+
+        if (!crawlId) {
+            statusIndicator.textContent = 'Error: No Crawl ID provided.';
+        } else {
+            startPolling();
+        }
+
+        let lastLogId = 0;
+        let isFinished = false;
+
+        function startPolling() {
+            // Poll for logs every second
+            const interval = setInterval(async () => {
+                if (isFinished) {
+                    clearInterval(interval);
+                    loadResults();
+                    return;
+                }
+                await fetchLogs();
+                await checkStatus();
+            }, 1000);
+        }
+
+        async function fetchLogs() {
+            try {
+                const res = await fetch(`/api/crawls/${crawlId}/logs`);
+                const logs = await res.json();
+
+                // Only append new logs
+                const newLogs = logs.filter(l => l.id > lastLogId);
+                if (newLogs.length > 0) {
+                    if (logsDiv.textContent === 'Waiting for logs...') logsDiv.innerHTML = '';
+
+                    newLogs.forEach(log => {
+                        const entry = document.createElement('div');
+                        entry.className = 'log-entry';
+                        entry.innerHTML = `<span class="log-time">${new Date(log.timestamp).toLocaleTimeString()}</span> ${log.message}`;
+                        logsDiv.appendChild(entry);
+                        lastLogId = log.id;
+                    });
+                    logsDiv.scrollTop = logsDiv.scrollHeight;
+                }
+            } catch (err) {
+                console.error('Error fetching logs', err);
+            }
+        }
+
+        async function checkStatus() {
+            try {
+                const res = await fetch('/api/crawls');
+                const crawls = await res.json();
+                const currentCrawl = crawls.find(c => c.id == crawlId);
+
+                if (currentCrawl) {
+                    statusIndicator.textContent = `Status: ${currentCrawl.status.toUpperCase()}`;
+                    if (currentCrawl.status === 'completed' || currentCrawl.status === 'failed') {
+                        isFinished = true;
+                    }
+                }
+            } catch (err) {
+                console.error('Error checking status', err);
+            }
+        }
+
+        async function loadResults() {
+            statusIndicator.textContent = 'Crawl Finished. Loading results...';
+            resultsSection.classList.remove('hidden');
+
+            try {
+                const res = await fetch(`/api/crawls/${crawlId}`);
+                const resources = await res.json();
+
+                if (resources.length === 0) {
+                    resourcesList.innerHTML = '<p>No resources found.</p>';
+                    return;
+                }
+
+                // Group by source page
+                const grouped = {};
+                resources.forEach(res => {
+                    const source = res.source_page_url || 'Unknown';
+                    if (!grouped[source]) grouped[source] = [];
+                    grouped[source].push(res);
+                });
+
+                let html = '';
+
+                for (const [source, items] of Object.entries(grouped)) {
+                    html += `<h3 style="margin-top:20px; border-bottom:1px solid #ccc;">Page: <a href="${source}" target="_blank">${source}</a></h3>`;
+                    html += `
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Status</th>
+                                    <th>Type</th>
+                                    <th>URL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                    `;
+
+                    items.forEach(res => {
+                        const statusClass = `status-${res.status_code}`;
+                        html += `
+                            <tr>
+                                <td class="${statusClass}">${res.status_code}</td>
+                                <td>${res.type}</td>
+                                <td title="${res.url}"><a href="${res.url}" target="_blank">${res.url.substring(0, 100)}${res.url.length > 100 ? '...' : ''}</a></td>
+                            </tr>
+                        `;
+                    });
+
+                    html += '</tbody></table>';
+                }
+
+                resourcesList.innerHTML = html;
+
+            } catch (err) {
+                resourcesList.textContent = 'Error loading results.';
+            }
+        }
+    </script>
+</body>
+
+</html>

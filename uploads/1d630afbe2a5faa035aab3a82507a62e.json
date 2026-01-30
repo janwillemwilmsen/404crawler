@@ -1,0 +1,415 @@
+{
+  "cookies": [
+    {
+      "name": "_interaction",
+      "value": "LlgTZv1_f5poSw5iOQ1ya",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_interaction.sig",
+      "value": "D764T84-qCmntE_QuBbHOWrShOc",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_csrf",
+      "value": "bPJeqpu7YboUBXAeO97YyVc2",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_fid",
+      "value": "4F8C0CDD2B4AA025-3E6F8890BCDD5250",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_cc",
+      "value": "true",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_vi",
+      "value": "[CS]v1|34BE3CE2A232CCBD-60000F1FA1D1E651[CE]",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_sq",
+      "value": "%5B%5BB%5D%5D",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_interaction_resume",
+      "value": "LlgTZv1_f5poSw5iOQ1ya",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_interaction_resume.sig",
+      "value": "4kMS-pQdtum57PxF1xnme47rDQU",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_session",
+      "value": "jUJ4zBDgrgMyMA1mfv_6m",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_session.sig",
+      "value": "ZlpjuhwcD7WZUxnBSoGYfsZZa8I",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "code-verifier-length",
+      "value": "1",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "code-verifier-0",
+      "value": "U2FsdGVkX1%2FcGog1K7EjkHuTVzJjzgD%2Bs0dMLIaTahLtXgjU7jt0%2FMymd8x6%2FhJti%2Fi0XZXFISpmXqC82sh%2BcA%3D%3D",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "redirect_after_login",
+      "value": "s%3A%2F.YeefELJQs1LjOE9zLtDNGmtZ5USab69HKmXgv7glShA",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "redirect_nonce",
+      "value": "s%3Ae07ea35a-3416-4504-8f5b-674724edb886.ckARe3T7H4fh2cHUgc7Y8zT3JZ4mpRz4DQAme8OknY8",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "access_token-length",
+      "value": "1",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "access_token-0",
+      "value": "U2FsdGVkX18Z7y8DMjP5Z5NsAErnL%2FRd3KiniQxGUwMwS6icQ3EipFghhlhQU0C30Dn%2BHEX2tOahJ2kXI6ZsRFVy3PcCIhhV%2Ftcs2Cd9iuwbmlecokKBGtK3wMopihgMazNBDz9bne3CLDpetUmtH3MJPrkuckJ76EbEvT4UvA0mxTzcRJeN0RcepB%2BJ%2BEN53oPU5dbyMRgKrEBy3fgqD8osIs9vW%2FuUQIBCGAz0IGrgpPc%2F6ZEKrnSFVWXD64fIi%2B0gNVP8J2ei4kiU9l83kxK9iRlRSj6IEQyz8Cdj%2BH5Dk3KB%2FP7boOZPU2cOH84JaPqb5c1lZC04G0Zg%2FtIJwhiAcqX%2FHi102U6ktX0SyJufzhfxcVAdXGhcVlsAVROHVpe427YlXZZC4%2FrooEhDpmj7r0kpvScosMmZePDx8YiNh4zauDlMpnl1V22gZ%2BjJcZcX7A%2BnTXOs1ZURLW4j3%2Bdn3NoDppN6MuXBE9%2B%2FCo9rpLSgQgYKOfHE7pZvX09AabpzoQkNy3%2FSRwpnu1GNe6fEH4HSz43sbuQykrmIzwUGYJawqSH8yoHSlHoBc2DpIuVMrjXqKA7B5Kg21SQDNfJNAV%2B%2BaIXui0cs86WB77W4p1Du3NTcPHkTlVY0d%2BWgO55ahwIwJV5IFgRTJSx7PdTKOGs%2Bt28um37al4ZbG9AuCVFRoGAm4fOZrYzaSB4%2FOdCICo6x%2FUdzKOUL8rDWZBxQSsfWuLACkR40f%2FpDlxDL%2F%2FK2AxrqhDrWQxIKGL1H9ctrapW6TeCrTI2tsx7S%2BGxIjc8BkzZQgDiDRr4iL%2BeDPNVvf%2F1niUp%2FNSF%2BmEMw11KXelxE%2B8ebHqumQHuOHLClQdu557QnV8AFOwEFO7ZK%2FbB025pETYJKzV%2F2O7nuhpx5pzLh90mee0ZEJ8n5CAB%2ByZn3nHfpnxew0LZrJqWHHbO23Gk33pJuxOePIsMtqSlV71tWO7KJIUytDMFD57MdW376K%2F6ATs8N4T90FoLOA7YxEoV403pwLIaWDUvwcSD3rjmQ1QMlqHIx01YFp09p0Bx%2BqIxg2KjKaN2YqxfumzynKyfwBcwghbm%2FEyesN2%2B4swVpKShGAe%2FCcpeCxghwy%2FPcKBLAcrxQAK%2BeDYzhaqtQe5zUjT76pLd2O%2Fyqv52bGvn3nSlwxWOTfPIhOv%2FwDRBQdy1zkUYt%2F5d5GwZdTqTUp9%2FfRC9idxj%2Boom2AML3Gval8c3swKMB4Zv637r3LkK%2B288%2BZUE%2BBcR1TQ7anH4eI0f5pdT%2FR5rvGE03Dm3FgXKuGK3hvql%2FRSIDeIHinyEGh0vtU5lCwfzsk54A29gvUH%2Bnj%2FUNeB1yvf%2FfpMNDhytGYJZ6%2FziwG95NbspVxIW7mCgnxUGZw7NEBPJsnDJdX7CDjv0huUpkRLIu0cGmcWQszW%2FMLKERWQiswMq8mrUwC16f%2FBbBnq%2FXhVxaTTpSIxrMxpVA56drngI4h%2FwrhstVHFNDA276541ApJIVrVHmuQ52%2BWEfWce8aAO2YutQ6UH5jfRlmc67kZrDF%2BkEnVAykZrAShyNQsBtBaBK3rmgtWq11uKeenneMGMLWsr2H80B2XasCa4OvPtqpMXD1N4CRZUBr6b9%2B6xA6B8kLkZP4pYkt3mmG52Ysfm550CBtWfBdR9frI9srNeSsfS7JMCxhZVG2Y4gltaiTACgQcvVHtJCadSTzc%2BtDlg%3D",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "id_token-length",
+      "value": "1",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "id_token-0",
+      "value": "U2FsdGVkX1%2FIC3iT32MwW%2FNANCM%2FYDOIdYnYc%2FH3YBpNsZfbDrP1ffkjOZ3t22wpXT6JoLHZMbQKw2fSvlJRoYufetRvZTR2%2F2KKZ2Qm9zRnpIxljDIAD2ea3F%2BWMIKrI6P%2BoNxbuCAi%2Fw7wdw6jvFGPimoWMtLw2HPL3sZDEjf8OFtYjRo1Rnjpq%2B1NYs1EMg4CD0KGPC0Y02573RfbYQWBZedHlELgAyS2zgzAkqNmSoVqu%2Fy%2BwaYMdYEOzZXTLgmwgyu9aRZ2iSXX2YOKXg6YIBngyMmZyZJgUiqtBd2Iuu6GqKgcWW%2Fj1howNp71rKJIZVvf2O%2B5uz%2BK4RU9p07PNgSM4m8XrWFGo4DvQh75JCMr45jYYSJgVptVHPRNxE5TRkKWk7Aoa3IRLQiF%2B8pKs6eCasIntZs6pDD8CNEfZJz7JYPBfNJnize1TMq9Wul%2FojiQt2dEhjW20RoMGteri57tEm0G9rfHAttfvgwk5B%2FKzDmXy8zZEhhrRRHD1C6T55XunhzRra9sUm2%2F4ry42ORScT0WGot1Xrz1pIz1kkP8vQ4RecoCbK9G0eXs%2BY5v9JZalOAmPDuIfzgmaFmrUnO4jVUcwLKDKIlWE3A2VIGQt%2FWtAG3QL0gaRxrAINSBy6uGZHYZ4vSbLuD7aNt31qCXD4rkZxU85DRjPXFHO7rGdr9zE75czki9loGSI%2B%2FDcxccm%2FsGOR2Es5dZNusixwMEdU6eGRgp1LLlAe%2BVGrkjoU%2BZy0Hp2EYrCEG%2Fo0atWvMPlUySQDo5JztcpHWSuFYyP3DUZPW%2FTpjpAKLgjbBUgGJWY9Vm6lswrxlUCCNiqeOu%2FjhwQVr3YMjU2E7DDgSrWS38d7O3sGEQJyES75XIwSICwAJGDW%2B3WFF5iTWalVP1A7XUHnhFIXQsMh8CfM%2F60Oykz2Pej8mXERMZ4sg2qiiS4Z3NyGlzOrKjlew0A2VGzcPmO3P18eMM5TjNpGd2r8S3AVRKk7fNWx8JeLTjMKEel2KHkHe%2FBI43tNezZ1QqyAchWvy6%2BkXg1NxVHchNpBZtNfjczbgaUZBQD2Y2XYbevX8ZHL9Eo2Qn%2FR3GsyIEH5eVuzEx%2FIFNbTbZj6u1oLDmlJD5fmwVjJ7FIzNsjh9MUC6HKV8FokM6a3fakIPR95VIqzr7DEc1OuAIX3tqt5HIYTdGW9UMZAxw5ogBSA0D1LRfNV9rE4EUuOd4pIIIu1U%2FBSt1V0DcX%2FrwQciXBXr4h7Faf%2FVsllVVGeSBOwW8lL23us0DRwyLu1tr2KG3VAMg6gKCmewdRcd4xBAXObuQif1TnHjfgIMpssRYiLJJcigVlJdQ%2Bk6YR3OrO5mtSCk2%2BQdRWbvrGXzgRjtij7S7XsHmUFcxkT27LRESw22E07T%2Fa%2F3HDYZZ",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "refresh_token-length",
+      "value": "1",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "refresh_token-0",
+      "value": "U2FsdGVkX19MGWAibcSIR4fNNRbjFpKfhERO1KnOPPMbRm%2FkY0hvYqeaTZ0rrM6JmS1lyiNPQdvLQbbXpg6HUA%3D%3D",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "user_id-length",
+      "value": "1",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "user_id-0",
+      "value": "0150701163",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth_tool_laststep-length",
+      "value": "1",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth_tool_laststep-0",
+      "value": "true",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mijn-essent#lang",
+      "value": "nl-NL",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ASP.NET_SessionId",
+      "value": "alaptukybdrhiarixvk1un1v",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "SC_ANALYTICS_GLOBAL_COOKIE",
+      "value": "66e03927dc624ec3b5b9aa21cd5dd8bd|False",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "shell#lang",
+      "value": "en",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rl_page_init_referring_domain",
+      "value": "RS_ENC_v3_ImFjY291bnQuZXNzZW50Lm5sIg%3D%3D",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rl_trait",
+      "value": "RS_ENC_v3_eyJicmFuZCI6IkVzc2VudCJ9",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rl_session",
+      "value": "RS_ENC_v3_eyJhdXRvVHJhY2siOnRydWUsInRpbWVvdXQiOjE4MDAwMDAsImV4cGlyZXNBdCI6MTc2OTc2NzEyOTU1MywiaWQiOjE3Njk3NjUzMjg2MTMsInNlc3Npb25TdGFydCI6ZmFsc2V9",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rl_page_init_referrer",
+      "value": "RS_ENC_v3_Imh0dHBzOi8vYWNjb3VudC5lc3NlbnQubmwvIg%3D%3D",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rl_anonymous_id",
+      "value": "RS_ENC_v3_IjIzMjFiMWUwLTc0Y2YtNDhmMy1iNmVkLWEyOGE3ZTM1MDNkYSI%3D",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rl_user_id",
+      "value": "RS_ENC_v3_IjAxNTA3MDExNjMi",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "consentLevel",
+      "value": "2",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_cs_mk_aa",
+      "value": "0.29601361234805934_1769765329674",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AMCV_0E57467352783B530A490D45%40AdobeOrg",
+      "value": "179643557%7CMCAID%7C34BE3CE2A232CCBD-60000F1FA1D1E651%7CMCIDTS%7C20484%7CMCMID%7C88773728152860954490038390213026043239%7CMCOPTOUT-1769772530s%7CNONE%7CMCAAMLH-1770370130%7C6%7CMCAAMB-1770370130%7Cj8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI%7CvVersion%7C5.5.0",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.1969063693.1769765330",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_ecid",
+      "value": "MCMID%7C88773728152860954490038390213026043239",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AMCVS_0E57467352783B530A490D45%40AdobeOrg",
+      "value": "1",
+      "domain": "mijn.essent.nl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

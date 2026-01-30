@@ -1,0 +1,9 @@
+{
+	"id": "GdLnMuWiFTRJllK",
+	"json": "{\"id\":\"GdLnMuWiFTRJllK\",\"url\":\"https://www.snelste.nl/video\",\"loadedUrl\":\"https://www.snelste.nl/video\",\"uniqueKey\":\"https://www.snelste.nl/video\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-hostname\",\"state\":4}},\"handledAt\":\"2026-01-30T21:12:42.509Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.snelste.nl/video",
+	"url": "https://www.snelste.nl/video"
+}

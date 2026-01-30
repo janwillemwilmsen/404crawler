@@ -1,0 +1,52 @@
+{
+  "requestsFinished": 2,
+  "requestsFailed": 1,
+  "requestsRetries": 1,
+  "requestsFailedPerMinute": 0,
+  "requestsFinishedPerMinute": 0,
+  "requestMinDurationMillis": 8390,
+  "requestMaxDurationMillis": 10470,
+  "requestTotalFailedDurationMillis": 60920,
+  "requestTotalFinishedDurationMillis": 18860,
+  "crawlerStartedAt": "2026-01-30T21:12:22.434Z",
+  "crawlerFinishedAt": "2026-01-30T21:16:36.976Z",
+  "statsPersistedAt": "2026-01-30T21:16:36.976Z",
+  "crawlerRuntimeMillis": 254853,
+  "crawlerLastStartTimestamp": 1769807542123,
+  "requestRetryHistogram": [
+    2,
+    null,
+    null,
+    1
+  ],
+  "statsId": 0,
+  "requestAvgFailedDurationMillis": 60920,
+  "requestAvgFinishedDurationMillis": 9430,
+  "requestTotalDurationMillis": 79780,
+  "requestsTotal": 3,
+  "requestsWithStatusCode": {
+    "200": 6
+  },
+  "errors": {
+    "C:\\www\\404crawler\\node_modules\\@apify\\timeout\\cjs\\index.cjs:64:68": {
+      "missing error code": {
+        "Error": {
+          "requestHandler timed out after 60 seconds.": {
+            "count": 1
+          }
+        }
+      }
+    }
+  },
+  "retryErrors": {
+    "C:\\www\\404crawler\\node_modules\\@apify\\timeout\\cjs\\index.cjs:64:68": {
+      "missing error code": {
+        "Error": {
+          "requestHandler timed out after 60 seconds.": {
+            "count": 3
+          }
+        }
+      }
+    }
+  }
+}

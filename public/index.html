@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Node Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>404 Crawler</h1>
+
+        <div class="input-group">
+            <input type="url" id="urlInput" placeholder="Enter URL to crawl (e.g. https://example.com/)" required>
+            <input type="number" id="maxPagesInput" placeholder="Max Pages (e.g. 100)" min="1"
+                style="max-width: 150px; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+            <input type="text" id="keywordInput" placeholder="Filter (e.g. about)"
+                style="max-width: 150px; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+            <div style="display: flex; align-items: center; margin-left: 10px;">
+                <input type="checkbox" id="isSitemapInput" style="margin-right: 5px;">
+                <label for="isSitemapInput" style="white-space: nowrap;">Use as Sitemap</label>
+            </div>
+
+            <button id="startBtn">Start Crawl</button>
+        </div>
+
+        <div id="status"></div>
+
+        <div class="history-section">
+            <h2>Crawl History</h2>
+            <div id="historyList">Loading...</div>
+        </div>
+
+        <div id="detailsSection" class="hidden">
+            <h2>Crawl Details <button id="backBtn">Back</button></h2>
+            <div id="resourcesList"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

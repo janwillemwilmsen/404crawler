@@ -1,0 +1,9 @@
+{
+	"id": "H9SQl3vtGWVcODm",
+	"json": "{\"id\":\"H9SQl3vtGWVcODm\",\"url\":\"https://www.snelste.nl/\",\"loadedUrl\":\"https://www.snelste.nl/\",\"uniqueKey\":\"https://www.snelste.nl\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-01-30T21:12:34.011Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.snelste.nl",
+	"url": "https://www.snelste.nl/"
+}
